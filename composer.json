@@ -1,0 +1,28 @@
+{
+    "name": "indiuz/php-cs-fixer-conventions",
+    "description": "Base PHP-CS-Fixer configurations for Drupal 9",
+    "type": "library",
+    "keywords": [
+        "drupal",
+        "coding style",
+        "phpcs",
+        "coding standard",
+        "php-cs-fixer"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "friendsofphp/php-cs-fixer": "^3"
+    },
+    "authors": [
+        {
+            "name": "Lucas",
+            "email": "lucas.nesci@indiuz.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "indiuz\\PhpCsFixerConventions\\": "./src/"
+        }
+    }
+}
