@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Indiuz\PhpCsFixerConventions\Fixer;
+namespace indiuz\PhpCsFixerConventions\Fixer;
 
 use PhpCsFixer\Fixer\FixerInterface;
 use PhpCsFixer\FixerDefinition\CodeSample;

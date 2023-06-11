@@ -2,12 +2,12 @@
 
 declare(strict_types = 1);
 
-namespace Indiuz\PhpCsFixerConventions\Config;
+namespace indiuz\PhpCsFixerConventions\Config;
 
-use Indiuz\PhpCsFixerConventions\Fixer\BlankLineBeforeEndOfClass;
-use Indiuz\PhpCsFixerConventions\Fixer\ControlStructureCurlyBracketsElseFixer;
-use Indiuz\PhpCsFixerConventions\Fixer\InlineCommentSpacerFixer;
-use Indiuz\PhpCsFixerConventions\Fixer\TryCatchBlock;
+use indiuz\PhpCsFixerConventions\Fixer\BlankLineBeforeEndOfClass;
+use indiuz\PhpCsFixerConventions\Fixer\ControlStructureCurlyBracketsElseFixer;
+use indiuz\PhpCsFixerConventions\Fixer\InlineCommentSpacerFixer;
+use indiuz\PhpCsFixerConventions\Fixer\TryCatchBlock;
 use PhpCsFixer\Config;
 use Symfony\Component\Yaml\Yaml;
 

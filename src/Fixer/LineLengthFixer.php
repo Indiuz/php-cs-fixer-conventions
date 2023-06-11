@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace Indiuz\PhpCsFixerConventions\Fixer;
+namespace indiuz\PhpCsFixerConventions\Fixer;
 
 use Symplify\TokenRunner\Transformer\FixerTransformer\LineLengthTransformer;
 use Symplify\TokenRunner\Analyzer\FixerAnalyzer\TokenSkipper;
