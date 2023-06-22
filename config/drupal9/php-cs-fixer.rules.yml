@@ -75,18 +75,18 @@ parameters:
         # declare_strict_types: false
         dir_constant: true
         doctrine_annotation_array_assignment:
-            operator: ':'
+            operator: '='
         doctrine_annotation_braces:
             syntax: without_braces
         doctrine_annotation_indentation: true
         doctrine_annotation_spaces:
-            after_argument_assignments: false
+            after_argument_assignments: true
             after_array_assignments_colon: true
-            after_array_assignments_equals: false
+            after_array_assignments_equals: true
             around_parentheses: true
-            before_argument_assignments: false
+            before_argument_assignments: true
             before_array_assignments_colon: false
-            before_array_assignments_equals: false
+            before_array_assignments_equals: true
         echo_tag_syntax:
             format: long
         elseif: true
