@@ -344,7 +344,7 @@ parameters:
         single_line_throw: false
         simple_to_complex_string_variable: true
         simplified_null_return: false
-        single_blank_line_before_namespace: true
+        blank_lines_before_namespace: true
         # Commented out since it is redeclared below
         # single_line_comment_style:
         #     comment_types:
@@ -403,6 +403,9 @@ parameters:
             position_after_functions_and_oop_constructs: same
             position_after_control_structures: same
             position_after_anonymous_constructs: same
+        braces_position:
+            functions_opening_brace: same_line
+            classes_opening_brace: same_line
         comment_to_phpdoc: false
         compact_nullable_typehint: true
         constant_case:
