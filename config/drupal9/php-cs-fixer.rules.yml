@@ -55,7 +55,10 @@ parameters:
         #         property: one
         #         trait_import: one
         class_definition:
-            multi_line_extends_each_single_line: true
+            inline_constructor_arguments: true
+            multi_line_extends_each_single_line: false
+            single_line: true
+            space_before_parenthesis: false
         combine_consecutive_issets: true
         combine_consecutive_unsets: true
         combine_nested_dirname: false
@@ -102,7 +105,22 @@ parameters:
         final_public_method_for_abstract_class: false
         fopen_flag_order: true
         fopen_flags: true
-        fully_qualified_strict_types: true
+        fully_qualified_strict_types:
+            phpdoc_tags:
+                - phpstan-param
+                - phpstan-property
+                - phpstan-property-read
+                - phpstan-property-write
+                - phpstan-return
+                - phpstan-var
+                - property-read
+                - property-write
+                - psalm-param
+                - psalm-property
+                - psalm-property-read
+                - psalm-property-write
+                - psalm-return
+                - psalm-var
         function_to_constant: true
         function_typehint_space: true
         # Commented out since it is redeclared below
@@ -390,6 +408,7 @@ parameters:
                 - if
                 - include
                 - include_once
+                - phpdoc
                 - require
                 - require_once
                 - return
@@ -398,21 +417,21 @@ parameters:
                 - try
                 - while
                 - yield
-        braces:
-            allow_single_line_closure: true
-            position_after_functions_and_oop_constructs: same
-            position_after_control_structures: same
-            position_after_anonymous_constructs: same
+                - yield_from
+        control_structure_continuation_position: false
+        declare_parentheses: true
+        no_multiple_statements_per_line: true
         braces_position:
-            functions_opening_brace: same_line
+            allow_single_line_anonymous_functions: false
             classes_opening_brace: same_line
+            control_structures_opening_brace: same_line
+            functions_opening_brace: same_line
         comment_to_phpdoc: false
         compact_nullable_typehint: true
         constant_case:
             case: upper
         declare_equal_normalize:
             space: single
-        Drupal/blank_line_before_end_of_class: true
         Drupal/control_structure_braces_else: true
         Drupal/inline_comment_spacer: true
         # WIP
