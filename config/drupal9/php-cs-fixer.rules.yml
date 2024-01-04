@@ -9,51 +9,10 @@ parameters:
         align_multiline_comment:
             comment_type: all_multiline
         array_indentation: true
-        # Commented out since it is redeclared below
-        # array_syntax:
-        #    syntax: long
         backtick_to_shell_exec: true
         binary_operator_spaces: true
-        # Commented out since it is redeclared below
-        # blank_line_before_statement:
-        #     statements:
-        #         - break
-        #         - case
-        #         - continue
-        #         - declare
-        #         - default
-        #         - do
-        #         - exit
-        #         - for
-        #         - foreach
-        #         - goto
-        #         - if
-        #         - include
-        #         - include_once
-        #         - require
-        #         - require_once
-        #         - return
-        #         - switch
-        #         - throw
-        #         - try
-        #         - while
-        #         - yield
-        #         - yield_from
-        # Commented out since it is redeclared below
-        # braces:
-        #     allow_single_line_closure: true
-        #     position_after_functions_and_oop_constructs: next
-        #     position_after_control_structures: same
-        #     position_after_anonymous_constructs: same
         cast_spaces:
             space: single
-        # Commented out since it is redeclared below
-        # class_attributes_separation:
-        #     elements:
-        #         const: one
-        #         method: one
-        #         property: one
-        #         trait_import: one
         class_definition:
             inline_constructor_arguments: true
             multi_line_extends_each_single_line: false
@@ -62,20 +21,9 @@ parameters:
         combine_consecutive_issets: true
         combine_consecutive_unsets: true
         combine_nested_dirname: false
-        # Commented out since it is redeclared below
-        # comment_to_phpdoc: true
-        # Commented out since it is redeclared below
-        # compact_nullable_typehint: false
         concat_space:
             spacing: one
-        # Commented out since it is redeclared below
-        # constant_case:
-        #     case: lower
         date_time_immutable: false
-        # Commented out since it is redeclared below
-        # declare_equal_normalize:
-        #    space: none
-        # declare_strict_types: false
         dir_constant: true
         doctrine_annotation_array_assignment:
             operator: '='
@@ -122,21 +70,7 @@ parameters:
                 - psalm-return
                 - psalm-var
         function_to_constant: true
-        function_typehint_space: true
-        # Commented out since it is redeclared below
-        # general_phpdoc_annotation_remove:
-        #     annotations:
-        #         - inheritdoc
-        #         - package
-        #         - subpackage
-        #         - author
-        #         - version
         general_phpdoc_tag_rename: true
-        # Commented out since it is redeclared below
-        # global_namespace_import:
-        #     import_classes: true
-        #     import_constants: true
-        #     import_functions: true
         header_comment: false
         heredoc_indentation: false
         heredoc_to_nowdoc: true
@@ -144,8 +78,6 @@ parameters:
         include: true
         increment_style:
             style: pre
-        # Commented out since it is redeclared below
-        # indentation_type: true
         integer_literal_case: true
         is_null: true
         linebreak_after_opening_tag: true
@@ -170,39 +102,16 @@ parameters:
                 - '@compiler_optimized'
             scope: namespaced
             strict: true
-        native_function_type_declaration_casing: true
-        new_with_braces: true
+        native_type_declaration_casing: true
+        new_with_parentheses: true
         no_alias_functions: true
-        # Commented out since it is redeclared below
-        # no_alternative_syntax: true
         no_binary_string: true
-        # Commented out since it is redeclared below
-        # no_blank_lines_after_phpdoc: true
-        no_blank_lines_before_namespace: false
         no_closing_tag: true
         no_empty_comment: true
         no_empty_phpdoc: true
         no_empty_statement: true
-        # Commented out since it is redeclared below
-        # Differs from PSR12 but includes it.
-        # no_extra_blank_lines:
-        #     tokens:
-        #         - break
-        #         - case
-        #         - continue
-        #         - curly_brace_block
-        #         - default
-        #         - extra
-        #         - parenthesis_brace_block
-        #         - return
-        #         - square_brace_block
-        #         - switch
-        #         - throw
         no_homoglyph_names: true
         no_leading_namespace_whitespace: true
-        # Commented out since it is redeclared below
-        # no_mixed_echo_print:
-        #     use: echo
         no_multiline_whitespace_around_double_arrow: true
         no_null_property_initialization: true
         no_php4_constructor: false
@@ -212,18 +121,8 @@ parameters:
             positions:
                 - inside
                 - outside
-        # Commented out since it is redeclared below
-        # no_spaces_after_function_name: true
-        # Commented out since it is redeclared below
-        # no_spaces_inside_parenthesis: true
         no_superfluous_elseif: true
-        # Commented out since it is redeclared below
-        # no_superfluous_phpdoc_tags:
-        #     allow_mixed: true
-        #     allow_unused_params: false
-        #     remove_inheritdoc: true
-        no_trailing_comma_in_list_call: true
-        no_trailing_comma_in_singleline_array: true
+        no_trailing_comma_in_singleline: true
         no_trailing_whitespace: true
         no_trailing_whitespace_in_comment: true
         no_unneeded_control_parentheses:
@@ -235,7 +134,7 @@ parameters:
                 - return
                 - switch_case
                 - yield
-        no_unneeded_curly_braces: true
+        no_unneeded_braces: true
         no_unneeded_final_method: true
         no_unreachable_default_argument_value: true
         no_unset_cast: true
@@ -307,9 +206,6 @@ parameters:
         php_unit_test_case_static_method_calls:
             call_type: self
         php_unit_test_class_requires_covers: true
-        # Commented out since it is redeclared below
-        # phpdoc_add_missing_param_annotation:
-        #     only_untyped: true
         phpdoc_align: false
         phpdoc_annotation_without_dot: false
         phpdoc_indent: true
@@ -363,12 +259,6 @@ parameters:
         simple_to_complex_string_variable: true
         simplified_null_return: false
         blank_lines_before_namespace: true
-        # Commented out since it is redeclared below
-        # single_line_comment_style:
-        #     comment_types:
-        #         - hash
-        # Commented out since it is redeclared below
-        # single_quote: true
         single_trait_insert_per_statement: true
         space_after_semicolon: true
         standardize_increment: true
@@ -381,15 +271,13 @@ parameters:
         ternary_to_null_coalescing: false
         trailing_comma_in_multiline: true
         trim_array_spaces: true
+        type_declaration_spaces:
+            elements:
+                - function
+                - property
         unary_operator_spaces: true
         void_return: false
         whitespace_after_comma_in_array: true
-        # Commented out since it is redeclared below
-        # yoda_style:
-        #     equal: true
-        #     identical: true
-        #     less_and_greater: true
-        #     always_move_variable: true
 
         # vendor/drupol/phpcsfixer-configs-drupal/config/drupal/phpcsfixer.rules.yml
         '@PSR2': false
@@ -418,21 +306,22 @@ parameters:
                 - while
                 - yield
                 - yield_from
-        control_structure_continuation_position: false
+        control_structure_continuation_position:
+            position: next_line
         declare_parentheses: true
         no_multiple_statements_per_line: true
         braces_position:
-            allow_single_line_anonymous_functions: false
+            allow_single_line_anonymous_functions: true
+            allow_single_line_empty_anonymous_classes: true
             classes_opening_brace: same_line
             control_structures_opening_brace: same_line
             functions_opening_brace: same_line
         comment_to_phpdoc: false
-        compact_nullable_typehint: true
+        compact_nullable_type_declaration: true
         constant_case:
             case: upper
         declare_equal_normalize:
             space: single
-        Drupal/control_structure_braces_else: true
         Drupal/inline_comment_spacer: true
         # WIP
         #Drupal/line_length:
@@ -458,8 +347,6 @@ parameters:
             import_classes: false
             import_constants: false
             import_functions: false
-        # Disable this rules - it conflicts with 'braces'
-        # indentation_type: true
         indentation_type: false
         line_ending: true
         lowercase_keywords: true
@@ -480,11 +367,9 @@ parameters:
                 - switch
                 - throw
                 - use
-                - use_trait
         no_mixed_echo_print:
             use: print
         no_spaces_after_function_name: true
-        no_spaces_inside_parenthesis: true
         no_superfluous_phpdoc_tags:
             allow_mixed: true
             allow_unused_params: true
@@ -493,6 +378,8 @@ parameters:
         single_line_comment_style: true
         single_quote:
             strings_containing_single_quote_chars: false
+        spaces_inside_parentheses:
+            space: none
         switch_case_semicolon_to_colon: true
         switch_case_space: true
         visibility_required: true
@@ -501,10 +388,6 @@ parameters:
             identical: false
             less_and_greater: false
             always_move_variable: false
-
-        # vendor/drupol/phpcsfixer-configs-drupal/config/drupal7/phpcsfixer.rules.yml
-        # Commented out since it is redeclared below
-        # declare_strict_types: false
 
         # vendor/drupol/phpcsfixer-configs-drupal/config/drupal8/phpcsfixer.rules.yml
         array_syntax:
