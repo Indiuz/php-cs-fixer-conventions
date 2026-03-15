@@ -321,7 +321,7 @@ parameters:
         constant_case:
             case: upper
         declare_equal_normalize:
-            space: single
+            space: none
         Drupal/inline_comment_spacer: true
         # WIP
         #Drupal/line_length:
@@ -369,6 +369,8 @@ parameters:
                 - use
         no_mixed_echo_print:
             use: print
+        no_break_comment:
+            comment_text: 'No break.'
         no_spaces_after_function_name: true
         no_superfluous_phpdoc_tags:
             allow_mixed: true
